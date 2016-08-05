@@ -2,7 +2,7 @@
 $email = $_POST['email'];
 $password = $_POST['password'];
 $email = filter_var($email, FILTER_SANITIZE_EMAIL);
-$con = mysqli_connect("166.62.28.146","gforceUser","abcdefg","gforce");
+$con = mysqli_connect("1.1.1.1","db_usr","db_pass","db_data");
 
 $salt = 'random';
 $hashed_value = md5($salt.$password);
